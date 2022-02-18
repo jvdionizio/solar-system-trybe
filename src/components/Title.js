@@ -3,10 +3,9 @@ import React from 'react';
 class Title extends React.Component {
   render() {
     const newLocal = this;
-    const { headline } = newLocal.props.headline;
     return (
       <h2>
-        {headline}
+        {newLocal.props.headline}
       </h2>
     );
   }
