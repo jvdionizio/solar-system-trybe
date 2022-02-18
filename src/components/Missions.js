@@ -10,8 +10,13 @@ class Missions extends React.Component {
         <Title headline="Missões" />
         <div className="planetas">
           {missions.map((mission) => (
-          // eslint-disable-next-line max-len
-            <MissionCard name={ mission.name } year={ mission.year } country={ mission.country } destination={ mission.destination } key={ mission.name } />
+            <MissionCard
+              name={ mission.name }
+              year={ mission.year }
+              country={ mission.country }
+              destination={ mission.destination }
+              key={ mission.name }
+            />
           ))}
         </div>
       </div>
